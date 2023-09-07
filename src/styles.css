@@ -107,3 +107,10 @@ body {
     color: var(--white);
     font-size: 0.8em;
 }
+.info-block-value{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--white);
+}
