@@ -133,7 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 1%; /* Add a margin for spacing */
-    padding: 1em; /* Add padding for better visual separation */
+    padding: 1.5em; /* Add padding for better visual separation */
     background-color: var(--blue-2); /* Add background color for individual info blocks */
     border-radius: 10px; /* Add rounded corners for better aesthetics */
 }
