@@ -114,3 +114,43 @@ body {
     align-items: center;
     color: var(--white);
 }
+/* Your existing CSS here */
+
+.more-info-container {
+    flex: 1;
+    background-color: var(--shadow-light);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust the spacing between info blocks */
+}
+
+.info-block {
+    width: 48%; /* Adjust the width to control the spacing between info blocks */
+    display: flex;
+    flex-direction: column;
+    margin: 1%; /* Add a margin for spacing */
+    padding: 1em; /* Add padding for better visual separation */
+    background-color: var(--blue-2); /* Add background color for individual info blocks */
+    border-radius: 10px; /* Add rounded corners for better aesthetics */
+}
+
+.info-block-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-block-label img {
+    width: 30px; /* Adjust the image size */
+}
+
+.info-block-value {
+    text-align: center;
+    font-size: 1.2em; /* Adjust the font size */
+    font-weight: bold; /* Add font weight for emphasis */
+}
