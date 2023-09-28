@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpBackend, HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
@@ -10,7 +10,15 @@ export class WeatherService {
   constructor( private http: HttpClient) { }
 
   getWeatherData(cityName: string){
-    this.http.get(environment.weatherApiBaseUrl,)
+    this.http.get(environment.weatherApiBaseUrl,{
+      headers: new HttpHeaders()
+      .set(environment.XRapidAPIHostHeaderName,
+        environment.XRapidAPIHostHeaderValue)
+      .set(environment.XRapidAPIHostHeaderName,
+        environment.XRapidAPIHostHeaderValue),
+      params: new HttpParams()
+      .set('city',cityName)    
+    })
   }
   
 }

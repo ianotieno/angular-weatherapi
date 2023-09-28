@@ -52,7 +52,9 @@
             </div>
         </div>
     </div>
+ <h1>{{ otieno | slice:4}}</h1>
+ <h2>{{person | json }}</h2>
 
-
+ <app-test [FirstName]="FirstName" (LastName)="lastname=$event"></app-test>
 
                         <router-outlet></router-outlet>
